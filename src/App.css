@@ -1,5 +1,139 @@
 .App {
+ background-image: url(C:\Users\User\Desktop\project-2021\bruce-diner\src\burger.jpg);
+ background-size:cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 30%;
+ 
+}
+/*style nav bar*/
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.rightnav a {
+  float: right;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*banner*/
+#banner {
+  /* background-color: #c75f5f; */
+  background-image: url('burrito2.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+}
+#banner h1{
+  font-size:400%;
+  color:#ffffff
+}
+#banner h3{
+  font-size:250%;
+  color:#f5f7f8
+}
+#banner button{
+  font-size:100%;
+ 
+}
+
+/*about*/
+#about{
+  
+  padding: 20px;
+}
+#about h1{
+  text-align: center;
+  font-size: 250%;
+  color: #2e0328;
+}
+#about .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about .column{
+  flex: 40%;
+  }
+  #about .photo {
+    flex:60%;
+    display: block;
+  }
+  #about .photo .img{
+    margin: 100%;
+    max-height: 300px;
+  }
+
+
+/*form*/
+
+  /* background-color: #5c304f;
+  } */
+  #signup {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #signup h1{
+  text-align: center;
+  color: rgb(247, 243, 243);
+  font-size: 250%;
+  }
+  #signup .row{
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+    }
+   
+    
+ 
+ /*footer*/
+ #footer {
+  padding: 20px 0;
+  background-color: #dedede;
+}
+
+#footer a {
+  color: #333;
+}
+#footer .row{
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
 }
 
 .App-logo {
@@ -21,7 +155,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(128, 11, 11);
 }
 
 .App-link {
