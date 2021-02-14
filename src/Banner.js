@@ -1,10 +1,22 @@
 import React from 'react';
 import {Nav, Navbar, } from 'react-bootstrap';
+import Vip from './Form';
+
+import About from'./About';
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    
+  } from "react-router-dom";
+
 
 
 export default function Banner () {
     return (
-        <div>
+       
+             <section id="banner">
         <div className="topnav">
         
                
@@ -21,21 +33,32 @@ export default function Banner () {
         </Nav>
       
     </Navbar>
+    <Router>
+    <Switch>
+                               
+                                <Route path="/about">
+                                    <About/>
+                                </Route>
+                                <Route path="/vip">
+                                    <Vip />
+                                </Route>
+                            </Switch>
+                            </Router>
     </section>
     </div>
     
-    <section id="banner">
+   
        
         <h1>Coming Soon!</h1>
         <h3>Epic</h3>
-        <h3> breakfast burritos!</h3>
-        <button variant="primary" type="submit">
+        <h3> Chicken burritos!</h3>
+        <a href='/vip'><button variant="primary" >
               Join our Vip List!
-         </button>
+         </button></a>
          
     </section>
 
-    </div>
+    
    
     )
 }

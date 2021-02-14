@@ -7,9 +7,10 @@
  
 }
 /*style nav bar*/
-.topnav{
+#banner .topnav{
+  display:block;
   overflow: hidden;
-  background-color: #333;
+  background-color:rgba(0, 0, 0, 0.3);
 }
 .topnav a {
   float: left;
@@ -29,19 +30,21 @@
 
 /*banner*/
 #banner {
-  /* background-color: #c75f5f; */
+  
   background-image: url('burrito2.jpg');
   background-size:cover;
   background-repeat: no-repeat;
-  padding: 20px;
+ 
   text-align: center;
 }
 #banner h1{
   font-size:400%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:#ffffff
 }
 #banner h3{
   font-size:250%;
+  font-family:cursive;
   color:#f5f7f8
 }
 #banner button{
@@ -57,6 +60,7 @@
 #about h1{
   text-align: center;
   font-size: 250%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #2e0328;
 }
 #about .row{
@@ -65,16 +69,19 @@
   justify-content: space-between;
 }
 #about .column{
-  flex: 40%;
+  flex: 50%;
   }
   #about .photo {
-    flex:60%;
+    flex:50%;
     display: block;
+    background-image: url('ownerdiner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+   
   }
-  #about .photo .img{
-    margin: 100%;
-    max-height: 300px;
-  }
+  
 
 
 /*form*/
@@ -94,9 +101,9 @@
   #signup .row{
     display: flex;
     flex-direction: column;
-      align-items: center;
-  justify-content: center;
-  text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
  
     }
    
@@ -104,36 +111,34 @@
  
  /*footer*/
  #footer {
-  padding: 20px 0;
-  background-color: #dedede;
+  padding: 10px 0;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 #footer a {
-  color: #333;
+  color: rgb(240, 230, 230);
 }
 #footer .row{
   display:flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content:space-around; 
 }
 /*
     Multicoloured Hover Variations
 */
 
-#lab_social_icon_footer #social-fb:hover {
+#footer .social-fb:hover {
   color: #3B5998;
 }
 
-#lab_social_icon_footer #social-tw:hover {
+#footer .social-tw:hover {
   color: #4099FF;
 }
 
-#lab_social_icon_footer #social-gp:hover {
-  color: #d34836;
-}
 
-#lab_social_icon_footer #social-em:hover {
-  color: #f39c12;
+
+#footer .social-em:hover {
+  color: #df568f;
 }
 
 .App-logo {

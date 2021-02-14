@@ -9,9 +9,9 @@ export default function Footer() {
             <section id="footer">
             <div class="container-fluid">
              <div class="row">
-            <a href="https://example.com/faq.html" > <FontAwesomeIcon icon={faInstagram} size="2x"/> </a>
-            <a href="https://example.com/faq.html"><FontAwesomeIcon icon={faFacebook} size="2x"/> </a>
-            <a href="https://example.com/faq.html"> <FontAwesomeIcon icon={faTwitter} size="2x"/>  </a>
+            <a className ='social-tw' href="https://www.instagram.com/rudyscantfail/" > <FontAwesomeIcon icon={faTwitter} size="2x"/> </a>
+            <a className ='social-fb' href="https://www.facebook.com/RudysCantFailCafel"><FontAwesomeIcon icon={faFacebook} size="2x"/> </a>
+            <a className ='social-em'href="https://twitter.com/RudyCantFailCaf"> <FontAwesomeIcon icon={faInstagram} size="2x"/>  </a>
             </div>
             </div>
             </section>
